@@ -23,12 +23,13 @@ export default function App() {
              
         4. Bu görevleri doğru bir şekilde tamamlarsanız, butona tıkladığınızda bazı güzel görsel efektlere sahip olmalı ve çalışmamızın arka planı otomatik olarak açık mavi bir arka planla değiştirilmelidir.
 */
-  return <div>
+  return (
+  <div>
   <button 
         className="video-game-button"
         onClick={() => setGameRunning(!gameRunning)}
       >
         {gameRunning ? "Pause" : "Play"}
       </button>
-      </div>;
+      </div>)
 }
